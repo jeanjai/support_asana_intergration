@@ -23,10 +23,10 @@
 #### OnSubmit: (When someone fills out the form)
   - Sends confirmation email to rep
   - If the task is wishlist, it'll create a task in the wishlist project in asana
-  - If the task is a technical issue, it'll create a task in the CB rep ticket project in asana
+  - If the task is a technical issue, it'll create a task in the rep project in asana
 
 #### OnChange: (When a ticket is created or moved in the proper Asana project)
-  - Figure out if the ticket was created directly in CB tickets or if it was moved from CB reps
+  - Figure out if the ticket was created directly in the proper asana project or if it was moved from rep project
   - If request is high priority, send slack notification
   
 #### OnReport: (When report should be sent)
@@ -49,8 +49,8 @@
 
   1. Make sure Form is linked to Spreadsheet so when a form is submitted it creates a row in Form Responses 1
   2. Make sure all triggers are created (onEdit, onWeek)
-  3. Make sure the zapier intergration for when new tasks are created in CB tickets is copying them to all asana tickets created sheet
-  4. Make sure automate.io is properly setup to send a slack notification to the devs when a task that was created in CB tickets is marked as high priority
+  3. Make sure the zapier intergration for when new tasks are created in the proper asana project is copying them to all asana tickets created sheet
+  4. Make sure automate.io is properly setup to send a slack notification to the devs when a task that was created in the proper asana project is marked as high priority
   5. Make sure the values in config are all accurate to what you're trying to accomplish
   6. Make sure the values in global_variables are accurate
 
@@ -131,11 +131,10 @@ By viewing view -> executions you'll be able to see an overview of what caused t
   - Yes! Set confirmationEmail to false in the user object in global_variables
 
 
-#### Why is the number of Moved to CB tickets higher than the number of submitted tickets in the weekly report?
+#### Why is the number of Moved to proper asana tickets higher than the number of submitted tickets in the weekly report?
 
-  - That's completly normal. The Moved to CB tickets include the tasks that were created from 
-    previous weeks. It's possible that a task that was created last week only got moved to CB 
-    tickets this week which could cause the number of moved tickets to be higher than the form submissions.
+  - That's completly normal. The Moved to proper tickets include the tasks that were created from 
+    previous weeks. It's possible that a task that was created last week only got moved to the proper asana project this week which could cause the number of moved tickets to be higher than the form submissions.
     
 
 #### Can I change the google sheet's title?
