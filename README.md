@@ -1,6 +1,11 @@
 # Google Form and Asana Intergration for Support Requests
 
 
+--------------------------------------------------------------------------------------------
+## PLEASE NOTE THAT THIS WAS BUILT BEFORE ASANA ADDED THIS FUNCTIONALITY
+--------------------------------------------------------------------------------------------
+
+
 ## Example sheet
 
 - https://docs.google.com/spreadsheets/d/1YBF-O98YrQ5csxnP4ADnyOoDiqmOhUqBiCxrV85AIXE/edit?usp=sharing
